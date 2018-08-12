@@ -3,7 +3,7 @@ name: Asgeir Albretsen
 email: bjellanda@gmail.com
 description: I am a hobbyist developer experimenting with creating apps, building websites and data analysis. You can find my various projects on this page! 
 
-baseurl: "/blog"
+baseurl: 
 url: "https://aski09.github.io/"
 
 display_footer: none  #change this to 'none' if you want to hide the footer copyright text
@@ -80,7 +80,7 @@ colored: colored # Leave blank for black and white icons
 
 project_button: Open
 
-github: https://github.com/jameshamann/jekyll-material-theme
+github: https://github.com/Aski09
 medium: https://medium.com
 
 baseurl: # if your site is located at /blog or /home, enter it here, otherwise leave it empty
