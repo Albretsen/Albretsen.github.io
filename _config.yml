@@ -16,21 +16,21 @@ project_one_description: I use this page to display all the mini projects I work
 project_one_url: https://aski09.github.io/TestProj/
 project_one_icon: location_on
 
-project_two: "Mad Libs Android App"
+project_two: "Mad Libs App"
 project_two_description: This is the first app of mine that wasn't made as a learning experience. All my apps until this one have been hobby projects that I quickly abandoned, however this app I successfully monitized. It has had several downloads every single day for 2 months straight, and it does not look like it's slowing down anytime soon. Unfortunately, the Mad Libs 'app market' is dominated by the original Mad Libs company, so expanding the app without a major advertising campaign is not something I have planned. With a large budget, I reckon I could take over a larger share of the market. 
 project_two_url: https://play.google.com/store/apps/details?id=com.asgeir_albretsen.madlibs
 project_two_icon: photo_camera
 
 
-project_three: Third Project
-project_three_description: Describe your project!
-project_three_url: https://github.com/jameshamann/jekyll-material-theme
+project_three: Interest Calculator App
+project_three_description: This is one of my experimentation apps. My previous apps suffered from a severe case of uglynessiatus, so with zero graphics design knowledge I tried to make a decent looking and functional app. This is the result. This app is my first multi-lingual app, with Norwegian and English. I'm not expecting downloads, as the 'interest calculator' market is very flooded.
+project_three_url: https://play.google.com/store/apps/details?id=com.asgeir_albretsen.rentekalkulator
 project_three_icon: hotel
 
 
-project_four: Fourth Project
-project_four_description: Describe your project!
-project_four_url: https://github.com/jameshamann/jekyll-material-theme
+project_four: Money Simulation Game
+project_four_description: This app is being developed, but I have lost all motivation so the likelyhood of it being finished is incredibly small. It's still an interesting proof of concept though!
+project_four_url: https://play.google.com/store/apps/details?id=com.Albretsen.MoneyGame
 project_four_icon: restaurant
 
 portfolio_heading: Portfolio
