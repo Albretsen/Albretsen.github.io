@@ -2,7 +2,7 @@
 layout: post
 title:  "My first JavaScript"
 date:   2017-12-04 21:15:05 +0000
-image: /assets/images/startup.jpg
+image: /assets/images/twoscreen.jpg
 
 ---
 After watching [The Coding Train](https://www.youtube.com/user/shiffman) on YouTube for a few weeks, I was completely fascinated with P5JS capabilities and simplicity! Here is my first attempt.
