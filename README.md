@@ -1,109 +1,254 @@
-# The Cayman theme
+# Jekyll Material Theme
 
-[![Build Status](https://travis-ci.org/pages-themes/cayman.svg?branch=master)](https://travis-ci.org/pages-themes/cayman) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-cayman.svg)](https://badge.fury.io/rb/jekyll-theme-cayman)
+A Jekyll Theme based on [Material Design](https://material.io/) using [Materialize](http://materializecss.com/).
 
-*Cayman is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/cayman), or even [use it today](#usage).*
+[![CircleCI](https://circleci.com/gh/jameshamann/jekyll-material-theme/tree/master.svg?style=svg)](https://circleci.com/gh/jameshamann/jekyll-material-theme/tree/master)
+[![Gem Version](https://badge.fury.io/rb/jekyll-material-theme.svg)](https://badge.fury.io/rb/jekyll-material-theme)
+[![Gem](https://img.shields.io/gem/dt/jekyll-material-theme.svg)](https://img.shields.io/gem/dt/jekyll-material-theme.svg)
 
-![Thumbnail of Cayman](thumbnail.png)
+
+## Examples
+
+<a href="https://imgur.com/D9DSyuk"><img src="https://i.imgur.com/D9DSyuk.gif" title="source: imgur.com" /></a>
+
+
+<a href="https://imgur.com/hlB1MOw"><img src="https://i.imgur.com/hlB1MOw.gif" title="source: imgur.com" /></a>
+
+<a href="https://imgur.com/qjhId2x"><img src="https://imgur.com/qjhId2x.gif" title="source: imgur.com" /></a>
+##### Cookie Policy
+
+If you use cookies on your site, or choose to use Google Analytics, you're able to notify visitors with this prompt. The ```Thanks!``` dialog message can be customised in your ```_config.yml``` file.
+
+<a href="https://imgur.com/O7sICnY"><img src="https://i.imgur.com/O7sICnY.gif" title="source: imgur.com" /></a>
+
+##### Tools and Experience Section
+
+If you'd like to display some of your skills and experience, you can do so through using the section below.
+
+<a href="https://imgur.com/DjtrH6s"><img src="https://imgur.com/DjtrH6s.png" title="source: imgur.com" /></a>
+
+
+### [Live Demo](https://jameshamann.com)
+
+## Installation
+
+Add this line to your Jekyll site's `Gemfile`:
+
+```ruby
+gem "jekyll-material-theme"
+```
+
+And add this line to your Jekyll site's `_config.yml`:
+
+```yaml
+theme: jekyll-material-theme
+```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install jekyll-material-theme
 
 ## Usage
 
-To use the Cayman theme:
+The ```_config.yml``` file has the following options.
 
-1. Add the following to your site's `_config.yml`:
+Please ensure to copy this sample before serving up your site as some variables are required in order to make the site run correctly.
 
-    ```yml
-    theme: jekyll-theme-cayman
-    ```
+```yaml
+title: Your awesome title
+name: Your Name
+email: your-email@example.com
+description: Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 
-2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
+display_footer: inital  #change this to 'none' if you want to hide the footer copyright text
 
-    ```ruby
-    gem "github-pages", group: :jekyll_plugins
-    ```
+theme: jekyll-material-theme
 
-## Customizing
+parallax_image_one: assets/images/startup3.jpg # These are the images used for the parallax background
+parallax_image_two: assets/images/startup3.jpg
 
-### Configuration variables
+# Settings for the porfolio section
 
-Cayman will respect the following variables, if set in your site's `_config.yml`:
+portfolio_heading: Portfolio
+portfolio_type: cards #cards or carousel
 
-```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
+project_one: "First Project"
+project_one_description: Describe your project!
+project_one_url: https://github.com/jameshamann/jekyll-material-theme
+project_one_icon: location_on # these are from materiailize css, the full collection is here: http://materializecss.com/icons.html
+
+project_two: Second Project
+project_two_description: Describe your project!
+project_two_url: https://github.com/jameshamann/jekyll-material-theme
+project_two_icon: photo_camera
+
+
+project_three: Third Project
+project_three_description: Describe your project!
+project_three_url: https://github.com/jameshamann/jekyll-material-theme
+project_three_icon: hotel
+
+
+project_four: Fourth Project
+project_four_description: Describe your project!
+project_four_url: https://github.com/jameshamann/jekyll-material-theme
+project_four_icon: restaurant
+
+# Skill icons from https://konpa.github.io/devicon/
+
+skills:
+  - name: amazonwebservices
+  - name: android
+  - name: angularjs
+  - name: apache
+  - name: appcelerator
+  - name: apple
+  - name: atom
+  - name: babel
+  - name: backbonejs
+  - name: bitbucket
+  - name: bootstrap
+  - name: bower
+  - name: c
+  - name: chrome
+  - name: codeigniter
+  - name: coffescript
+  - name: confluence
+  - name: cplusplus
+  - name: csharp
+  - name: css3
+  - name: cucumber
+  - name: d3js
+  - name: debian
+  - name: devicon
+  - name: django
+  - name: docker
+  - name: doctrine
+  - name: dot-net
+  - name: drupal
+  - name: erlang
+  - name: facebook
+  - name: firefox
+  - name: foundation
+  - name: gatling
+  - name: gimp
+  - name: git
+  - name: github
+  - name: gitlab
+  - name: go
+  - name: google
+  - name: gradle
+  - name: grunt
+  - name: gulp
+  - name: heroku
+  - name: html5
+  - name: ie10
+  - name: illustrator
+  - name: inkscape
+  - name: itellij
+  - name: java
+  - name: jasmine
+  - name: javascript
+  - name: laravel
+  - name: less
+  - name: linux
+  - name: meteor
+  - name: mocha
+  - name: mongodb
+  - name: moodle
+  - name: mysql
+  - name: nginx
+  - name: nodejs
+  - name: nodewebkit
+  - name: oracle
+  - name: photoshop
+  - name: php
+  - name: phpstorm
+  - name: protractor
+  - name: postgresql
+  - name: python
+  - name: pycharm
+  - name: rails
+  - name: react
+  - name: redhat
+  - name: redis
+  - name: ruby
+  - name: rubymine
+  - name: safari
+  - name: sass
+  - name: sequelize
+  - name: slack
+  - name: sourcetree
+  - name: ssh
+  - name: swift
+  - name: symfony
+  - name: tomcat
+  - name: travis
+  - name: trello
+  - name: twitter
+  - name: typescript
+  - name: ubuntu
+  - name: vim
+  - name: visualstudio
+  - name: vuejs
+  - name: webpack
+  - name: webstorm
+  - name: windows8
+  - name: wordpress
+  - name: yii
+  - name: zend
+  - name: ansible
+    uri: https://upload.wikimedia.org/wikipedia/fr/thumb/4/4b/Ansible_logo.png/220px-Ansible_logo.png # Add external icon, for internal icon use uri: /assets/my_icon.jpg
+
+icon_size: 50 # font-size of icons in px
+colored: colored # Leave blank for black and white icons
+
+project_button: Github
+
+github: https://github.com/jameshamann/jekyll-material-theme
+medium: https://medium.com
+
+baseurl: # If your site is located at /blog or /home, change it here, otherwise leave it empty
+url: http://localhost:4000/ # The URL of your site
+
+# Google tracking, if both are filled, tag manager will prevail. Set up GA through GTM in that case
+tag_manager_id: # This looks something like GTM-XXXXXXX
+google_analytics_tracking_id: # This looks something like UA-000000000-0 Head over to https://analytics.google.com/ to setup.
+
+cookie_accept_message: Thanks! # The pop-up dialog that appears after accepting the cookie notice.
+
+syntax_highlighting: true # include the css for syntax highlighting
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-assets
+  - jekyll-minifier
+
 ```
-
-Additionally, you may choose to set the following optional variables:
-
-```yml
-show_downloads: ["true" or "false" to indicate whether to provide a download URL]
-google_analytics: [Your Google Analytics tracking ID]
-```
-
-### Stylesheet
-
-If you'd like to add your own custom styles:
-
-1. Create a file called `/assets/css/style.scss` in your site
-2. Add the following content to the top of the file, exactly as shown:
-    ```scss
-    ---
-    ---
-
-    @import "{{ site.theme }}";
-    ```
-3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
-
-*Note: If you'd like to change the theme's Sass variables, you must set new values before the `@import` line in your stylesheet.*
-
-### Layouts
-
-If you'd like to change the theme's HTML layout:
-
-1. [Copy the original template](https://github.com/pages-themes/cayman/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
-2. Create a file called `/_layouts/default.html` in your site
-3. Paste the default layout content copied in the first step
-4. Customize the layout as you'd like
-
-### Overriding GitHub-generated URLs
-
-Templates often rely on URLs supplied by GitHub such as links to your repository or links to download your project. If you'd like to override one or more default URLs:
-
-1. Look at [the template source](https://github.com/pages-themes/cayman/blob/master/_layouts/default.html) to determine the name of the variable. It will be in the form of `{{ site.github.zip_url }}`.
-2. Specify the URL that you'd like the template to use in your site's `_config.yml`. For example, if the variable was `site.github.url`, you'd add the following:
-    ```yml
-    github:
-      zip_url: http://example.com/download.zip
-      another_url: another value
-    ```
-3. When your site is built, Jekyll will use the URL you specified, rather than the default one provided by GitHub.
-
-*Note: You must remove the `site.` prefix, and each variable name (after the `github.`) should be indent with two space below `github:`.*
-
-For more information, see [the Jekyll variables documentation](https://jekyllrb.com/docs/variables/).
-
-## Roadmap
-
-See the [open issues](https://github.com/pages-themes/cayman/issues) for a list of proposed features (and known issues).
-
-## Project philosophy
-
-The Cayman theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
 
 ## Contributing
 
-Interested in contributing to Cayman? We'd love your help. Cayman is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](docs/CONTRIBUTING.md) for instructions on how to contribute.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jameshamann/jekyll-material-theme. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-### Previewing the theme locally
+## Development
 
-If you'd like to preview the theme locally (for example, in the process of proposing a change):
+To set up your environment to develop and further customise this theme, fork the repo and explore the ```_assets``` directory, which includes all the ```css, js``` and ```font``` folders. If you're adding a feature, please add some tests in the ```spec``` directory to ensure everything works as intended.
 
-1. Clone down the theme's repository (`git clone https://github.com/pages-themes/cayman`)
-2. `cd` into the theme's directory
-3. Run `script/bootstrap` to install the necessary dependencies
-4. Run `bundle exec jekyll serve` to start the preview server
-5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
+## Contributors
 
-### Running tests
+- [James Hamann](https://github.com/jameshamann)
+- [Jam Rizzer](https://github.com/jamrizzi)
+- [Kobes](https://github.com/Kobes)
+- [fe80](https://github.com/fe80)
+## [Changelog](https://github.com/jameshamann/jekyll-material-theme/blob/master/CHANGELOG.md)
 
-The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` one before the test script will work.
+## License
+
+The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
