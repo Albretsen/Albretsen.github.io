@@ -11,7 +11,7 @@ display_footer: none  #change this to 'none' if you want to hide the footer copy
 parallax_image_one: assets/images/startup3.jpg # These are the images used for the parallax background
 parallax_image_two: assets/images/startup3.jpg
 
-project_one: "Mad Libs android app"
+project_one: "Mad Libs Android App"
 project_one_description: This is the first app of mine that wasn't made as a learning experience. All my apps until this one have been hobby projects that I quickly abandoned, however this app I successfully monitized. It has had several downloads every single day for 2 months straight, and it does not look like it's slowing down anytime soon. Unfortunately, the Mad Libs 'app market' is dominated by the original Mad Libs company, so expanding the app without a major advertising campaign is not something I have planned. With a large budget, I reckon I could take over a larger share of the market. 
 project_one_url: https://play.google.com/store/apps/details?id=com.asgeir_albretsen.madlibs
 project_one_icon: location_on
