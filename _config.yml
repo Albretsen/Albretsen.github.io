@@ -1,19 +1,19 @@
-title: Your awesome title
-name: Your Name
-email: your-email@example.com
-description: Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+title: Asgeir Albretsen
+name: Asgeir Albretsen
+email: bjellanda@gmail.com
+description: I am a hobbyist developer experimenting with creating apps, building websites and data analysis. You can find my various projects on this page! 
 
 baseurl: "/blog"
-url: ""
+url: "https://aski09.github.io/"
 
-display_footer: inital  #change this to 'none' if you want to hide the footer copyright text
+display_footer: none  #change this to 'none' if you want to hide the footer copyright text
 
 parallax_image_one: assets/images/startup3.jpg # These are the images used for the parallax background
 parallax_image_two: assets/images/startup3.jpg
 
-project_one: "First Project"
-project_one_description: Describe your project!
-project_one_url: https://github.com/jameshamann/jekyll-material-theme
+project_one: "Mad Libs android app"
+project_one_description: This is the first app of mine that wasn't made as a learning experience. All my apps until this one have been hobby projects that I quickly abandoned, however this app I successfully monitized. It has had several downloads every single day for 2 months straight, and it does not look like it's slowing down anytime soon. Unfortunately, the Mad Libs 'app market' is dominated by the original Mad Libs company, so expanding the app without a major advertising campaign is not something I have planned. With a large budget, I reckon I could take over a larger share of the market. 
+project_one_url: https://play.google.com/store/apps/details?id=com.asgeir_albretsen.madlibs
 project_one_icon: location_on
 
 project_two: Second Project
@@ -34,117 +34,51 @@ project_four_url: https://github.com/jameshamann/jekyll-material-theme
 project_four_icon: restaurant
 
 portfolio_heading: Portfolio
-portfolio_type: cards
+portfolio_type: carousel
 
 syntax_highlighting: true
 # Skill icons from https://konpa.github.io/devicon/
 
 skills:
-  - name: amazonwebservices
   - name: android
-  - name: angularjs
-  - name: apache
-  - name: appcelerator
   - name: apple
-  - name: atom
-  - name: babel
-  - name: backbonejs
   - name: bitbucket
-  - name: bootstrap
-  - name: bower
   - name: c
   - name: chrome
-  - name: codeigniter
-  - name: coffescript
-  - name: confluence
-  - name: cplusplus
   - name: csharp
-  - name: css3
-  - name: cucumber
-  - name: d3js
-  - name: debian
-  - name: devicon
   - name: django
-  - name: docker
-  - name: doctrine
   - name: dot-net
-  - name: drupal
-  - name: erlang
   - name: facebook
   - name: firefox
-  - name: foundation
-  - name: gatling
   - name: gimp
   - name: git
   - name: github
-  - name: gitlab
-  - name: go
   - name: google
   - name: gradle
-  - name: grunt
-  - name: gulp
-  - name: heroku
   - name: html5
   - name: ie10
   - name: illustrator
-  - name: inkscape
   - name: itellij
   - name: java
-  - name: jasmine
   - name: javascript
-  - name: laravel
-  - name: less
   - name: linux
-  - name: meteor
-  - name: mocha
-  - name: mongodb
-  - name: moodle
-  - name: mysql
-  - name: nginx
-  - name: nodejs
-  - name: nodewebkit
   - name: oracle
   - name: photoshop
-  - name: php
-  - name: phpstorm
-  - name: protractor
-  - name: postgresql
   - name: python
   - name: pycharm
-  - name: rails
-  - name: react
-  - name: redhat
-  - name: redis
   - name: ruby
-  - name: rubymine
   - name: safari
-  - name: sass
-  - name: sequelize
-  - name: slack
   - name: sourcetree
-  - name: ssh
-  - name: swift
-  - name: symfony
-  - name: tomcat
-  - name: travis
-  - name: trello
   - name: twitter
-  - name: typescript
   - name: ubuntu
-  - name: vim
   - name: visualstudio
-  - name: vuejs
-  - name: webpack
-  - name: webstorm
   - name: windows8
   - name: wordpress
-  - name: yii
-  - name: zend
 
 icon_size: 50 # font-size of icons in px
 colored: colored # Leave blank for black and white icons
 
-project_button: Github
+project_button: Open
 
 github: https://github.com/jameshamann/jekyll-material-theme
 medium: https://medium.com
