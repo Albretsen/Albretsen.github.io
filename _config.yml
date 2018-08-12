@@ -25,7 +25,7 @@ github_username:  Aski09
 
 # Build settings
 markdown: kramdown
-theme: slate
+theme: minima
 plugins:
   - jekyll-feed
 
