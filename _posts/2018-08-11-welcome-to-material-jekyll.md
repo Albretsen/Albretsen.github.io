@@ -1,45 +1,134 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Game of Life"
 date:   2017-12-04 21:15:05 +0000
 image: /assets/images/startup.jpg
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+A game that has always peaked my interest is "Game of Life". It's a game that plays by it self. The game is divided up into cells that can either be alive or dead. Overpopulation causes cells to die, and so does underpopulation. It simulates a simple society.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+You can find my version of the game [here.](https://aski09.github.io/TestProj/)
 
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
-
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
-
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
+If you want to play around with the variables, you can downloaded the [P5JS Editor here.](https://p5js.org/download/) I have commented out explanations for all the variables. (If you need any help setting it up, contact me via the contact form on the main page)
 
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+//Edit "cols" to change board size
+var cols = 50;
+var rows = cols;
+
+//Alive chance is the likelyhood of a cell being alive when the game is first loaded
+//Refresh the game to load a new board
+var aliveChance = 0.1;
+
+//"rectSize" is the size of the cells
+var rectSize = 15;
+
+//"framerate" is how often the game updates per second. It can also be a decimal number
+var framerate = 10;
+var paused = false;
+
+//This is a 2 dimensional array. Every cells state is stored in this array.
+var grid;
+
+function setup() {
+  createCanvas(cols * rectSize + 1, rows * rectSize + 1);
+  frameRate(framerate);
+
+  grid = make2DArray();
+  populate();
+  drawGrid();
+}
+
+function draw() {
+  print("test");
+}
+
+function make2DArray() {
+  var arr = new Array(cols);
+  for (var i = 0; i < arr.length; i++) {
+    arr[i] = new Array(rows);
+  }
+  return arr;
+}
+
+function populate() {
+  for (var i = 0; i < cols; i++) {
+    for (var j = 0; j < rows; j++) {
+      if (random(1) <= aliveChance) {
+        grid[i][j] = 1;
+      } else {
+        grid[i][j] = 0;
+      }
+    }
+  }
+}
+
+function changeState() {
+  for (var i = 0; i < cols; i++) {
+    for (var j = 0; j < rows; j++) {
+      if (i - 1 < 0 || i + 1 >= cols || j - 1 < 0 || j + 1 >= rows) {
+
+      } else {
+        var sum = 0;
+        for (var x = -1; x < 2; x++) {
+          for (var z = -1; z < 2; z++) {
+
+            var col = (x + i + cols) % cols;
+            var row = (z + j + rows) % rows;
+
+            sum += grid[col][row];
+            //sum += grid[i+x][j+z];
+          }
+        }
+        sum -= grid[i][j];
+        var state = grid[i][j];
+
+        if (state == 0 && sum == 3) {
+          grid[i][j] = 1;
+        } else if (state == 1 && (sum < 2 || sum > 3)) {
+          grid[i][j] = 0;
+        } else {
+          grid[i][j] = state;
+        }
+      }
+    }
+  }
+}
+
+function drawGrid() {
+  fill(255);
+  stroke(0);
+
+  var x = 0;
+  var y = 0;
+
+  for (var i = 0; i < cols; i++) {
+    for (var j = 0; j < rows; j++) {
+      if (grid[i][j] == 1) {
+        fill(0);
+      }
+      rect(x, y, rectSize, rectSize);
+      fill(255);
+      x += rectSize;
+    }
+    x = 0;
+    y += rectSize;
+  }
+
+  changeState();
+}
+
+function keyPressed() {
+  if (keyCode === ENTER && !paused) {
+    paused = true;
+  }else{
+    paused = false;
+  }
+}
+
+function draw() {
+  if (!paused) {
+    drawGrid();
+  }
+}
+
 {% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
