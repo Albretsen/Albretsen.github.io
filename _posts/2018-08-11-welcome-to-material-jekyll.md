@@ -10,7 +10,7 @@ You can find my version of the game [here.](https://aski09.github.io/TestProj/)
 
 If you want to play around with the variables, you can downloaded the [P5JS Editor here.](https://p5js.org/download/) I have commented out explanations for all the variables. (If you need any help setting it up, contact me via the contact form on the main page)
 
-{% highlight ruby %}
+{% highlight javascript %}
 //Edit "cols" to change board size
 var cols = 50;
 var rows = cols;
