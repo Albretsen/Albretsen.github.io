@@ -6,7 +6,7 @@ image: /assets/images/startup.jpg
 ---
 A game that has always peaked my interest is "Game of Life". It's a game that plays by it self. The game is divided up into cells that can either be alive or dead. Overpopulation causes cells to die, and so does underpopulation. It simulates a simple society.
 
-You can find my version of the game [here.](https://aski09.github.io/TestProj/)
+You can find my version of the game [here.](https://albretsen.github.io/Current_Project/)
 
 If you want to play around with the variables, you can downloaded the [P5JS Editor here.](https://p5js.org/download/) I have commented out explanations for all the variables. (If you need any help setting it up, contact me via the contact form on the main page)
 
