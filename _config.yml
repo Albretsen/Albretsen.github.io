@@ -1,106 +1,57 @@
-title: Asgeir Albretsen
-name: Asgeir Albretsen
-email: bjellanda@gmail.com
-description: I am a hobbyist developer experimenting with creating apps, building websites and data analysis. You can find my various projects on this page! 
+# Site settings
+title: Hanuman
+description: Hanuman is a minimal yet powerful Jekyll theme for your blogs and websites.
+cover: assets/images/radhakrishna.jpg
+logo: assets/images/logo.png
+favicon: assets/images/favicon.png
+baseurl: "/hanuman/" # the subpath of your site, e.g. /blog/ or / for root
+url: "https://samanyougarg.com" # the base hostname & protocol for your site
+paginate:	5 # The number of posts to show per page on your homepage
 
-baseurl: 
-url: "https://albretsen.github.io/"
+# Social
+facebook: facebook
+twitter: twitter
+github:  github
 
-display_footer: none  #change this to 'none' if you want to hide the footer copyright text
-
-parallax_image_one: assets/images/startup3.jpg # These are the images used for the parallax background
-parallax_image_two: assets/images/startup3.jpg
-
-project_one: Current Project
-project_one_description: I use this page to display all the mini projects I work on! It will mainly be interesting JavaScript code made with the P5JS editor!
-project_one_url: https://albretsen.github.io/Current_Project/
-project_one_icon: location_on
-
-project_two: "Mad Libs App"
-project_two_description: This is the first app of mine that wasn't made as a learning experience. All my apps until this one have been hobby projects that I quickly abandoned, however this app I successfully monitized. It has had several downloads every single day for 2 months straight, and it does not look like it's slowing down anytime soon. Unfortunately, the Mad Libs 'app market' is dominated by the original Mad Libs company, so expanding the app without a major advertising campaign is not something I have planned. With a large budget, I reckon I could take over a larger share of the market. 
-project_two_url: https://play.google.com/store/apps/details?id=com.asgeir_albretsen.madlibs
-project_two_icon: photo_camera
+#Additional Pages
+about: about
+contact: contact
+privacy-policy: privacy-policy
 
 
-project_three: Interest Calculator App
-project_three_description: This is one of my experimentation apps. My previous apps suffered from a severe case of uglynessiatus, so with zero graphics design knowledge I tried to make a decent looking and functional app. This is the result. This app is my first multi-lingual app, with Norwegian and English. I'm not expecting downloads, as the 'interest calculator' market is very flooded.
-project_three_url: https://play.google.com/store/apps/details?id=com.asgeir_albretsen.rentekalkulator
-project_three_icon: hotel
+permalink: /:title
 
 
-project_four: Money Simulation Game
-project_four_description: This app is being developed, but I have lost all motivation so the likelyhood of it being finished is incredibly small. It's still an interesting proof of concept though!
-project_four_url: https://play.google.com/store/apps/details?id=com.Albretsen.MoneyGame
-project_four_icon: restaurant
-
-portfolio_heading: Portfolio
-portfolio_type: cards
-
-syntax_highlighting: true
-# Skill icons from https://konpa.github.io/devicon/
-
-skills:
-  - name: android
-  - name: apple
-  - name: bitbucket
-  - name: c
-  - name: chrome
-  - name: csharp
-  - name: django
-  - name: dot-net
-  - name: facebook
-  - name: firefox
-  - name: gimp
-  - name: git
-  - name: github
-  - name: google
-  - name: gradle
-  - name: html5
-  - name: ie10
-  - name: illustrator
-  - name: itellij
-  - name: java
-  - name: javascript
-  - name: linux
-  - name: oracle
-  - name: photoshop
-  - name: python
-  - name: pycharm
-  - name: ruby
-  - name: safari
-  - name: sourcetree
-  - name: twitter
-  - name: ubuntu
-  - name: visualstudio
-  - name: windows8
-  - name: wordpress
-
-icon_size: 50 # font-size of icons in px
-colored: colored # Leave blank for black and white icons
-
-project_button: Open
-
-github: https://github.com/Aski09
-medium: https://medium.com
-
-baseurl: # if your site is located at /blog or /home, enter it here, otherwise leave it empty
-url: http://localhost:4000/ #the url of your site
-
-# Google tracking, if both are filled, tag manager will prevail. Set up GA through GTM in that case
-tag_manager_id: # This looks something like GTM-XXXXXXX
-google_analytics_tracking_id: # This looks something like UA-000000000-0 Head over to https://analytics.google.com/ to setup.
-
-cookies_banner: show # The value "show" will show the cookies banner, the value "none" will hide the banner.
-
-cookie_accept_message: Thanks!
-
-syntax_highlighting: true # include the css for syntax highlighting
+# Google Analytics
+analytics_id: ""
 
 # Build settings
 markdown: kramdown
-# theme: minima
-permalink: pretty
+
+kramdown:
+  parse_block_html: true
+
 plugins:
-  - jekyll-feed
-  - jekyll-assets
-  - jekyll-minifier
+  - jekyll-paginate
+
+
+# Settings for rake task
+safe: False
+lsi: False
+username: samanyougarg #github username
+repo: hanuman #github repository
+branch: master #branch
+relative_source: ../hanuman/ #source directory
+destination: ../hanuman-pages/ #destination directory
+production_url:  https://samanyougarg.com/
+source_url:  https://github.com/samanyougarg/hanuman #source repository url
+
+exclude:
+  - README.md
+  - Rakefile
+  - Gemfile
+  - Gemfile.lock
+  - changelog.md
+  - "*.Rmd"
+  - vendor
+  - .travis.yml
