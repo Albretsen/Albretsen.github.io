@@ -1,20 +1,20 @@
 # Site settings
-title: A blog about lorem ipsum dolor sit amet
-description: A blog about lorem ipsum dolor sit amet
+title: Asgeir Albretsen's landing page
+description: Find my main projects and experience here
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
-# url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
+url: "https://albretsen.github.io/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: Anon Developer
-user_description: Bicycle rights irony actually neutra typewriter lyft. Man bun taxidermy put a bird on it, umami yr ramps pop-up ugh bushwick chia lo-fi. Occupy bitters pour-over snackwave you probably haven't heard of them small batch. Cornhole mustache man bun letterpress echo park VHS.
-user_title: Software Developer
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
+username: Asgeir Albretsen
+user_description: I'm a hobbyist developer interested in programming. I create apps, websites and other small projects using CSharp or JavaScript. I also love to race cars!
+user_title: Hobbyist Developer
+email: asgeir.albretsen@gmail.com
+twitter_username: AlbretsenAsgeir
+github_username:  Albretsen
 gplus_username:  lorem_ipsum
 
 # Google-analytics
 google-analytics:
-  id: ""
+  id: "UA-124170622-1"
 
 exclude: ['package.json', 'src' , 'node_modules']
