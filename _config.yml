@@ -1,20 +1,16 @@
 # Site settings
-title: Asgeir Albretsen's landing page
-description: Find my main projects and experience here
-# baseurl: "/particle" # the subpath of your site, e.g. /blog
-url: "https://albretsen.github.io/" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
-
-# User settings
-username: Asgeir Albretsen
-user_description: I'm a hobbyist developer interested in programming. I create apps, websites and other small projects using CSharp or JavaScript. I also love to race cars! 
-user_title: Hobbyist Developer
+title: Albretsen
 email: asgeir.albretsen@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  I'm a hobbyist website, game and app developer. This is my
+  landing site, where you can find all my main projects
+  and also read a little about them. I will also happily build
+  apps and games for anyone with a good idea! Contact me via
+  email or the contact form on this website!
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://albretsen.github.io/" # the base hostname & protocol for your site
 twitter_username: AlbretsenAsgeir
 github_username:  Albretsen
-gplus_username:  lorem_ipsum
 
-# Google-analytics
-google-analytics:
-  id: "UA-124170622-1"
-
-exclude: ['package.json', 'src' , 'node_modules']
+# Build settings
+markdown: kramdown
